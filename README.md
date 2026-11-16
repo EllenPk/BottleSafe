@@ -31,13 +31,6 @@ fotograma en escala de grises, ejecuta el modelo y devuelve sus recuadros.
 La confianza mínima inicial es 25 %. Una pantalla sin detecciones no certifica
 que la botella esté intacta. El modelo v3 se ajustó con 30 fotos. En cuatro tomas reservadas de la última tanda, la v3 localizó 5 de 5 perforaciones anotadas frente a 3 de 5 con v2. Ambas versiones dieron cero falsas alarmas en las dos tomas intactas de esa prueba. El umbral de confianza fue 25 % y el mínimo de superposición de cajas (IoU) fue 0,50. Las tomas reservadas muestran botellas del proyecto en otros ángulos. Las vistas perforadas de la galería se usaron en el ajuste. La botella intacta de la galería se reservó para probar falsas alarmas.
 
-## Desplegar en Netlify
-
-Sube el contenido de esta carpeta a la raíz de tu repositorio en GitHub.
-Importa el repositorio desde Netlify. El archivo `netlify.toml` indica que
-debe usar Node.js 22, ejecutar `npm run build` y publicar la carpeta `out/`.
-El modelo ONNX y los archivos de ejecución se sirven desde el mismo sitio.
-
 ## Mapa de perforaciones
 
 La botella animada representa aproximadamente el lado visible. Los puntos
