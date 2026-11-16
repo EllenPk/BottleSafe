@@ -1,0 +1,17 @@
+{
+  "name": "inspeccion-botellas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postinstall": "node scripts/preparar-ort.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "onnxruntime-web": "^1.31.1",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  }
+}
